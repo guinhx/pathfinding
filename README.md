@@ -9,7 +9,7 @@ The algorithm is just a direct rewrite of a version made for Spigot where it can
 
 ### Finding path beetween nearby entity and player.
 
-```<?php
+```php
 use lib\pathfinding\Pathfinder;
 
 $initialPath = $player->getPosition();
@@ -34,7 +34,7 @@ if($entity instanceof Living) {
 ```
 
 ### Using path result
-```
+```php
 $pathResult = Pathfinder::find($start, $end);
 $world = $player->getWorld();
 if(!$pathResult->haveFailed()) {
